@@ -16,3 +16,8 @@ app.use(resDataMiddleware);
 
 // 监听端口
 app.listen(8888);
+
+// webSocket使用
+const webSocketService = require('./service/web_socket_service')
+// 监听客户端连接
+webSocketService.listen();
